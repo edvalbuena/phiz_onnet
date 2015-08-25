@@ -19,10 +19,7 @@
                {% include "_lb_topmenu.tpl" %}
              {% endif %}
              {% if m.modules.info.mod_kazoo.enabled and m.kazoo.get_kazoo_account_id %}
-               <li><a href="/userportal">{_ User Portal _}</a>
-               {% if m.kazoo.is_kazoo_account_admin %}
                  {% include "_kazoo_topmenu.tpl" %}
-                {% endif %}
             {% endif %}
            <li class="divider visible-xs"></li>
            <li><a id="xs_sign_out" class="visible-xs" href="#">{_ Sign out _}</a></li>

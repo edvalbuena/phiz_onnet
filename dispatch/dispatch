@@ -24,7 +24,7 @@
  {first_order, ["first_order"], controller_template, [{template, "first_order.tpl"}]},
  {login,["login"],         controller_template,  [ {template, "login.tpl"} ]},
  {password_recovery,["password_recovery"],         controller_template,  [ {template, "password_recovery.tpl"} ]},
- {dashboard,["dashboard"],         controller_template,  [ {template, "onnet_dashboard.tpl"} ]},
+ {dashboard,["dashboard"],         controller_template,  [ {template, "lb_dashboard.tpl"} ]},
  {account_details,["account_details"],         controller_template,  [ {template, "account_details.tpl"} ]},
  {finance_details,["finance_details"],         controller_template,  [ {template, "finance_details.tpl"} ]},
  {statistics,["statistics"],         controller_template,  [ {template, "statistics.tpl"} ]},

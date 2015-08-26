@@ -68,6 +68,9 @@
           <ul class="nav navbar-nav navbar-right hidden-xs">
           {% if not m.kazoo.is_auth %}
             <!-- Sign in & Sign up -->
+            <li id="sign-up">
+              <a href="/signup">{_ Sing up _}</a>
+            </li>
             <li id="sign-in">
               <a href="#">{_ Sign in _}</a>
               <div class="search-box hidden" id="sign-in-box">
@@ -100,6 +103,10 @@
                 </form>
               </div>
             </li>
+            <!-- Place Order -->
+            <li id="order">
+              <a href="/first_order"><i class="fa fa-shopping-cart" style="padding-right: .5em;"></i> {_ Order _}</a>
+            </li>
           {% endif %}
           {% if m.kazoo.is_auth %}
             <!-- Admin Sign in -->
@@ -108,12 +115,6 @@
              <a class="visible-sm" href="#"><i class="fa fa-power-off fa-lg"></i></a>
            </li>
            {% wire id="sign_out" postback={signout} delegate="mod_kazoo" %} 
-          {% endif %}
-          {% if not m.kazoo.is_auth %}
-            <!-- Place Order -->
-            <li id="order">
-              <a href="/first_order"><i class="fa fa-shopping-cart" style="padding-right: .5em;"></i> {_ Order _}</a>
-            </li>
           {% endif %}
             {% all include "language_choice.tpl" %}
           </ul>

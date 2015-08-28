@@ -18,9 +18,6 @@
              {% if m.session.lb_user_id and m.kazoo.is_kazoo_account_admin %}
                {% include "_lb_topmenu.tpl" %}
              {% endif %}
-             {% if m.modules.info.mod_kazoo.enabled and m.kazoo.get_kazoo_account_id %}
-                 {% include "_kazoo_topmenu.tpl" %}
-            {% endif %}
            <li class="divider visible-xs"></li>
            <li><a id="xs_sign_out" class="visible-xs" href="#">{_ Sign out _}</a></li>
            {% wire id="xs_sign_out" postback={signout} delegate="mod_kazoo" %} 
@@ -118,6 +115,11 @@
           {% endif %}
             {% all include "language_choice.tpl" %}
           </ul>
+           {% if m.kazoo.is_auth %}
+             {% if m.modules.info.mod_kazoo.enabled and m.kazoo.get_kazoo_account_id %}
+                 {% include "_kazoo_topmenu.tpl" %}
+             {% endif %}
+           {% endif %}
         </div>
       </div>
     </div>

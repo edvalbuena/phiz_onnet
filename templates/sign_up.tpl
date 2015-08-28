@@ -15,42 +15,36 @@
             <div class="form-group">
               <div class="row">
                 <div class="col-sm-6">
-                  <input type="text" class="form-control margin-bottom-xs" id="firstname" name="firstname" placeholder="Your name (mandatory)" data-toggle="popover" 
-                                     data-placement="left" data-trigger="focus" data-content="Enter your name here." data-original-title="Name">
+                  <input type="text" class="form-control margin-bottom-xs" id="firstname" name="firstname" placeholder="{_ Your name (mandatory) _}">
                 </div>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="surname" name="surname" placeholder="Your surname (mandatory)" data-toggle="popover" 
-                                     data-placement="left" data-trigger="focus" data-content="Enter your surname here." data-original-title="Name">
+                  <input type="text" class="form-control" id="surname" name="surname" placeholder="{_ Your surname (mandatory) _}">
                 </div>
               </div>
             </div>
             <div class="form-group">
               <div class="row">
                 <div class="col-sm-6">
-                  <input type="text" class="form-control margin-bottom-xs" id="username" name="username" placeholder="Enter email address (mandatory)" data-toggle="popover" 
-                                     data-placement="left" data-trigger="focus" data-content="Enter your nickname here." data-original-title="Username">
+                  <input type="text" class="form-control margin-bottom-xs" id="username" name="username" placeholder="{_ Enter email address (mandatory) _}">
                 </div>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control margin-bottom-xs" id="email" name="email" placeholder="Confirm email address (mandatory)" data-toggle="popover" 
-                                     data-placement="left" data-trigger="focus" data-content="Enter a valid email here." data-original-title="Email">
+                  <input type="text" class="form-control margin-bottom-xs" id="email" name="email" placeholder="{_ Confirm email address (mandatory) _}">
                 </div>
               </div>
             </div>
             <div class="form-group">
               <div class="row">
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="companyname"  name="companyname" placeholder="Company name (optional)" data-toggle="popover" 
-                                     data-placement="left" data-trigger="focus" data-content="Enter your company name." data-original-title="Company name">
+                  <input type="text" class="form-control" id="companyname"  name="companyname" placeholder="{_ Company name (optional) _}">
                 </div>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="phonenumber" name="phonenumber" placeholder="Phone number (mandatory)" data-toggle="popover" 
-                                     data-trigger="focus" data-content="Enter your phonenumber here." data-original-title="Phone number">
+                  <input type="text" class="form-control" id="phonenumber" name="phonenumber" placeholder="{_ Phone number (mandatory) _}">
                 </div>
               </div>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" id="checkbox" name="checkbox" /> I agree to the <a href="/termscons">Terms of Service</a> and <a href="/privacypolicy">Privacy Policy</a>
+                <input type="checkbox" id="checkbox" name="checkbox" />{_ I agree to the _} <a href="/termscons">{_ Terms of Service _}</a>
               </label>
             </div>
             <br />

@@ -35,10 +35,10 @@
             <div class="form-group">
               <div class="row">
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="companyname"  name="companyname" placeholder="{_ Company name (optional) _}">
+                  <input type="text" class="form-control" id="companyname"  name="companyname" placeholder="{_ Company name _} {_ (optional) _}">
                 </div>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="phonenumber" name="phonenumber" placeholder="{_ Phone number (mandatory) _}">
+                  <input type="text" class="form-control" id="phonenumber" name="phonenumber" placeholder="{_ Phone number _} {_ (mandatory) _}">
                 </div>
               </div>
             </div>
@@ -51,18 +51,20 @@
             <div class="form-group">
               <div class="row">
                 <div class="col-sm-6">
-                  {% button text=_"Create an account" action={submit target="sign_up_form"} class="btn btn-zprimary margin-bottom-xs" %}
+                  {% button text=_"Create an account" class="btn btn-zprimary margin-bottom-xs" action={submit target="sign_up_form"}
+                                                                                                action={update target="google_recaptcha" template="_google_recaptcha.tpl"}
+                  %}
                 </div>
-                <div class="col-sm-6">
-                  <div class="g-recaptcha" data-sitekey="6LeY2wsTAAAAAMUb-o1XX4_M0UKQ5IOM4_uxsh48"></div>
+                <div id="google_recaptcha" class="col-sm-6">
+                  {% include "_google_recaptcha.tpl" %}
                 </div>
               </div>
             </div>
+            <input type="hidden" name="notify_signed_up" value="yes" />
           </form>
         </div>
       </div>
     </div>
-<script src='https://www.google.com/recaptcha/api.js'></script>
 
 <br />
 

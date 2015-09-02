@@ -112,7 +112,7 @@
 
     <li>
 
-    <p align="LEFT" style="margin-bottom: 0cm;"><span lang="ru-RU"><span style="font-weight: normal;">оплатить 	счет Вы можете из личного кабинета, 	воспользовавшись платежной системой 	</span></span><span lang="en-US"><span style="font-weight: normal;">Assist 	(</span></span><span lang="ru-RU"><span style="font-weight: normal;">кредитные 	карты, электронные деньги) или другим 	удобным для Вас способом. Способы оплаты 	услуг <a href="http://onnet.su/howtopay">приведены в соответствующем 	разделе нашего сайта</a>.</span></span></p>
+    <p align="LEFT" style="margin-bottom: 0cm;"><span lang="ru-RU"><span style="font-weight: normal;">оплатить 	счет Вы можете из личного кабинета, 	воспользовавшись платежной системой 	</span></span><span lang="en-US"><span style="font-weight: normal;">Assist 	(</span></span><span lang="ru-RU"><span style="font-weight: normal;">кредитные 	карты, электронные деньги) или другим 	удобным для Вас способом. Способы оплаты 	услуг <a href="/payments">приведены в соответствующем 	разделе нашего сайта</a>.</span></span></p>
 
     </li>
 

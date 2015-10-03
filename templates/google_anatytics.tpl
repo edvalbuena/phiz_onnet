@@ -1,6 +1,6 @@
 <script type='text/javascript'>
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-15363475-4']);
+  _gaq.push(['_setAccount', '{{ m.config.phiz.google_analytics_code.value }}']);
   _gaq.push(['_setCustomVar', 1, 'Page creation time and ram', '54', 3]);
   _gaq.push(['_setCustomVar', 2, 'Logged-in user', 'anonymous', 3]);
   _gaq.push(['_trackPageview']);

@@ -86,12 +86,14 @@ event(#submit{message={firstorderform, []}}, Context) ->
             CaptchaPassed = []
     end,
            
+    {ClientIP, _} = webmachine_request:peer(z_context:get_reqdata(Context)),
     Vars = [{mail, z_context:get_q("mail", Context)},
             {name, z_context:get_q("name", Context)},
             {message, z_context:get_q("message", Context)},
             {servicetype, ServiceType},
             {ordernumber, OrderNumber},
             {surname, Surname}
+            ,{clientip, ClientIP}
             ,{firstname, Firstname}
             ,{middlename, Middlename}
             ,{contactphone, ContactPhone}

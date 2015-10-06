@@ -63,5 +63,7 @@
                 <br />
 		<p>{_ Best regards _},</p>
 		<p>{_ OnNet communications Inc. _}</p>
+                <br />
+                <a style="font-size:small; color: #c0c0c0;" >{_ Requester's IP address _}: {{ clientip }}</a>
 	</body>
 </html>

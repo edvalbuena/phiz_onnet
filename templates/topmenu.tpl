@@ -94,7 +94,7 @@
                   <div class="mb-10" style="width: 230px; text-transform: none;">{_ Change password _}</div>
                   <input class="form-control mb-10" placeholder="{_ Username _}" type="text" id="forgotten_username"
                          name="forgotten_username" value=""  autofocus="autofocus" autocapitalize="off" autocomplete="on" tabindex=1>
-                  <input class="form-control mb-10" placeholder="{_ Account or phone number _}" type="text" id="forgotten_account_name"
+                  <input class="form-control mb-10" placeholder="{_ Account or Phone number _}" type="text" id="forgotten_account_name"
                          name="forgotten_account_number" value=""  autofocus="autofocus" autocapitalize="off" autocomplete="on" tabindex=1>
                   {% button text=_"Receive password" action={submit target="forgottenpwd_form"} class="btn btn-default" %}
                   <button id="cancel-pwd-btn" class="btn btn-default pull-right" type="button">{_ Cancel _}</button>

@@ -125,7 +125,7 @@
         <div class="col-md-4">
         <div class="block-header">
           <h2>
-            <span class="title"><span class="hidden-md">{_ Last _}</span> {_ updates _}</span>
+            <span class="title">{_ Last updates _}</span>
             <span class="decoration"></span>
             <span class="decoration"></span>
             <span class="decoration"></span>

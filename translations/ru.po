@@ -1,6 +1,33 @@
 msgid ""
 msgstr ""
 
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid "News"
+msgstr "Новости"
+
+msgid "Last updates"
+msgstr "Новости"
+
 msgid "Russia"
 msgstr "Россия"
 

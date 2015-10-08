@@ -47,6 +47,24 @@ event({postback, contact_info_next, _TriggerId, _TargetId}, Context) ->
     _:_ -> z_render:growl_error(?__("All fields should be correctly filled in",Context), Context)
   end;
 
+event({submit,{innoauth,[]},"sign_in_form","sign_in_form"}, Context) ->
+    Login = z_convert:to_binary(z_context:get_q("username",Context)),
+    Password = z_convert:to_binary(z_context:get_q("password",Context)),
+ %   Account = z_convert:to_binary(z_context:get_q("account",Context)),
+    lager:info("phizzzz Account: ~p",[z_convert:to_binary(z_context:get_q("account",Context))]),
+    case z_convert:to_binary(z_context:get_q("account",Context)) of
+        <<>> ->
+            case lb_auth:sign_in(Context) of
+                {ok, AuthContext} ->
+                    lager:info("User ~p authenticated", [z_context:get_q("username", Context)]),
+                    z_render:wire({redirect, [{dispatch, "dashboard"}]}, AuthContext);
+                {sign_in_failed} ->
+                    lager:info("Failed to authenticate user ~p", [z_context:get_q("username", Context)]),
+                    z_render:growl_error(?__("Auth failed.", Context), Context)
+            end;
+        Account -> modkazoo_auth:do_sign_in(Login, Password, Account, Context)
+    end;
+
 event(A, Context) ->
     lager:info("Unknown event A: ~p", [A]),
     lager:info("Unknown event variables: ~p", [z_context:get_q_all(Context)]),

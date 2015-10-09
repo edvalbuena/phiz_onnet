@@ -13,8 +13,8 @@
           <ul class="nav navbar-nav">
             <li><a href="/dashboard">{_ Dashboard _}</a></li>
             <li><a href="/finance_details">{_ Payments _}</a></li>
-            <li><a href="/documents">{_ Documents _}</a></li>
             <li><a href="/lb_statistics">{_ Statistics _}</a></li>
+            <li><a href="/documents">{_ Documents _}</a></li>
             <li class="divider visible-xs"></li>
             <li><a id="xs_sign_out" class="visible-xs" href="#">{_ Sign out _}</a></li>
             {% wire id="xs_sign_out" postback={signout} delegate="mod_kazoo" %} 

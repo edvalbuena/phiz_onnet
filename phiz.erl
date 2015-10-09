@@ -50,8 +50,6 @@ event({postback, contact_info_next, _TriggerId, _TargetId}, Context) ->
 event({submit,{innoauth,[]},"sign_in_form","sign_in_form"}, Context) ->
     Login = z_convert:to_binary(z_context:get_q("username",Context)),
     Password = z_convert:to_binary(z_context:get_q("password",Context)),
- %   Account = z_convert:to_binary(z_context:get_q("account",Context)),
-    lager:info("phizzzz Account: ~p",[z_convert:to_binary(z_context:get_q("account",Context))]),
     case z_convert:to_binary(z_context:get_q("account",Context)) of
         <<>> ->
             case lb_auth:sign_in(Context) of
@@ -63,6 +61,26 @@ event({submit,{innoauth,[]},"sign_in_form","sign_in_form"}, Context) ->
                     z_render:growl_error(?__("Auth failed.", Context), Context)
             end;
         Account -> modkazoo_auth:do_sign_in(Login, Password, Account, Context)
+    end;
+
+event({submit,{forgottenpwd,[]},"forgottenpwd_form","forgottenpwd_form"}, Context) ->
+    Username = z_convert:to_binary(z_context:get_q("forgotten_username",Context)),
+    NumberOrName = modkazoo_util:normalize_account_name(z_context:get_q("forgotten_account_name",Context)),
+    AccountName = case kazoo_util:kz_admin_find_accountname_by_number(NumberOrName, Context) of
+        'undefined' -> NumberOrName;
+         NameFound -> NameFound
+    end,
+    case kazoo_util:password_recovery(Username, AccountName, Context) of
+        <<"">> ->
+            case lb_util:maybe_send_passwd(Context) of
+                'false' -> z_render:growl_error(?__("No account found",Context), Context);
+                _ ->
+                     Context2 = z_render:dialog_close(Context),
+                     z_render:growl(?__("Password sent. Please check your mailbox.",Context2), Context2)
+            end;
+        Answer ->
+            Context1 = z_render:wire([{set_class, [{target, "forgot-pwd-box"},{class,"search-box hidden"}]}], Context),
+            z_render:growl(?__("Please check your mailbox", Context1), Context1)
     end;
 
 event(A, Context) ->

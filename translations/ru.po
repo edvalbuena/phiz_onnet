@@ -16,8 +16,8 @@ msgstr ""
 msgid ""
 msgstr ""
 
-msgid ""
-msgstr ""
+msgid "HOSTED PBX"
+msgstr "ВИРТУАЛЬНАЯ АТС"
 
 msgid "News"
 msgstr "Новости"

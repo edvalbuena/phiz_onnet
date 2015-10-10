@@ -25,6 +25,7 @@
             <ul>
                 <li title="twitter.com/onnetcomm"><a href="https://twitter.com/onnetcomm" target="_blank"><i class="fa fa-twitter"></i></a></li>
                 <li title="github.com/onnet"><a href="https://github.com/onnet" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li title="youtube.com"><a href="https://www.youtube.com/channel/UCWiBVuW0hlR3mxNOiP9cj1w" target="_blank"><i class="fa fa-youtube"></i></a></li>
             </ul>
             <div class="clearfix"></div>
           </div>

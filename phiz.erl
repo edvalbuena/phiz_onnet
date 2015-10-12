@@ -47,7 +47,7 @@ event({postback, contact_info_next, _TriggerId, _TargetId}, Context) ->
     _:_ -> z_render:growl_error(?__("All fields should be correctly filled in",Context), Context)
   end;
 
-event({submit,{innoauth,[]},"sign_in_form","sign_in_form"}, Context) ->
+event({submit,{phizauth,[]},_,_}, Context) ->
     Login = z_convert:to_binary(z_context:get_q("username",Context)),
     Password = z_convert:to_binary(z_context:get_q("password",Context)),
     case z_convert:to_binary(z_context:get_q("account",Context)) of
@@ -63,7 +63,7 @@ event({submit,{innoauth,[]},"sign_in_form","sign_in_form"}, Context) ->
         Account -> modkazoo_auth:do_sign_in(Login, Password, Account, Context)
     end;
 
-event({submit,{forgottenpwd,[]},"forgottenpwd_form","forgottenpwd_form"}, Context) ->
+event({submit,{forgottenpwd,[]},_,_}, Context) ->
     Username = z_convert:to_binary(z_context:get_q("forgotten_username",Context)),
     NumberOrName = modkazoo_util:normalize_account_name(z_context:get_q("forgotten_account_name",Context)),
     AccountName = case kazoo_util:kz_admin_find_accountname_by_number(NumberOrName, Context) of

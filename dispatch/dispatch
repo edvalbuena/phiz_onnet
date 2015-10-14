@@ -27,7 +27,6 @@
  {dashboard,["dashboard"],         controller_template,  [ {template, "lb_dashboard.tpl"} ]},
  {account_details,["account_details"],         controller_template,  [ {template, "account_details.tpl"} ]},
  {finance_details,["finance_details"],         controller_template,  [ {template, "finance_details.tpl"} ]},
- {statistics,["statistics"],         controller_template,  [ {template, "statistics.tpl"} ]},
  {documents,["documents"],         controller_template,  [ {template, "documents.tpl"} ]},
  {getlbdocs, ["getlbdocs","id",id], controller_getlbdocs, [{path, id},{use_cache, false},{content_disposition, attachment},{ssl, any}]},
  {cdr_csv_download,  ["cdr", "csv", "download"],   controller_onnet_cdr_csv, []},

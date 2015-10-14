@@ -54,7 +54,7 @@
             <li id="sign-in">
               <a href="#">{_ Sign in _}</a>
               <div class="search-box hidden" id="sign-in-box">
-                {% wire id="sign_in_form" type="submit" postback={innoauth} delegate="phiz" %}
+                {% wire id="sign_in_form" type="submit" postback={phizauth} delegate="phiz" %}
                 <form id="sign_in_form" class="input-group" method="post" action="postback">
                   <input type="text" class="form-control mb-10" placeholder="{_ Login _}" id="username" 
                           name="username" value=""  autofocus="autofocus" autocapitalize="off" autocomplete="on" tabindex=1 />

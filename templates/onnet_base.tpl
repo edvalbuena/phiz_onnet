@@ -16,8 +16,8 @@
 
     <!-- Bootstrap -->
 
-    {% lib "css/bootstrap.min.css" %}
-    {% lib "js/bootstrap.min.js" %}
+    {% lib "bootstrap/css/bootstrap.min.css" %}
+    {% lib "bootstrap/js/bootstrap.min.js" %}
 
     <!-- Custom styles for this template -->
     <link href='//fonts.googleapis.com/css?family=Tangerine:100,300,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>

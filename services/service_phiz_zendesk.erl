@@ -15,7 +15,6 @@ process_get(ReqData, Context) ->
 
 process_post(_ReqData, Context) ->
     ?DEBUG(z_context:get_q_all(Context)),
-    ?DEBUG(z_context:get_q("caller_id_number",Context)),
   %  lager:info("Post ReqData: ~p",[ReqData]),
 
     DataBag = {[{<<"ticket">>,
@@ -24,17 +23,11 @@ process_post(_ReqData, Context) ->
                  ]}
               }]},
 
-    Payload = jiffy:encode(DataBag),
-
-    URL = "https://qqq96.zendesk.com/api/v2/tickets.json",
-
-    {'ok', _, _, Body} = ibrowse:send_req(URL
+    {'ok', _, _, Body} = ibrowse:send_req(z_context:get_q("api_url",Context)
                                          ,[{"Content-Type", "application/json"}]
                                          ,'post'
-                                         ,Payload
+                                         ,jiffy:encode(DataBag)
                                          ,[{'basic_auth', {z_context:get_q("username",Context), z_context:get_q("password",Context)}},{'inactivity_timeout', 10000}]),
-
-    lager:info("Body: ~p",[io_lib:format("~p",[Body])]),
 
     Response = [{result, <<"OK">>}],
     z_convert:to_json(Response).

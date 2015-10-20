@@ -19,7 +19,11 @@ process_get(ReqData, Context) ->
 
 process_post(_ReqData, Context) ->
     case z_context:get_q("call_direction",Context) of
-        "inbound" -> may_be_add_zendesk_ticket(Context);
+        "inbound" ->
+            case z_context:get_q("authorizing_id",Context) of
+                'undefined' -> may_be_add_zendesk_ticket(Context);
+                _ -> 'ok'
+            end;
         _ -> 'ok'
     end,
     z_convert:to_json([{result, "OK"}]).
@@ -37,10 +41,14 @@ may_be_add_zendesk_ticket(Context) ->
     end.
 
 add_zendesk_ticket(Context) ->
+    [To,_] = z_string:split(z_context:get_q("to",Context),"@"),
+    [From,_] = z_string:split(z_context:get_q("from",Context),"@"),
+    Subject = "Incoming call from: " ++ From,
+    Body = "Call from: " ++ From ++ " to: " ++ To,
     DataBag = {[{<<"ticket">>,
-                 {[{<<"subject">>, <<(?__("Incoming call from", Context))/binary, ": ", (modkazoo_util:get_q_bin("caller_id_number",Context))/binary>>},
+                 {[{<<"subject">>, z_convert:to_binary(Subject)},
                    {<<"external_id">>, modkazoo_util:get_q_bin("call_id",Context)},
-                   {<<"comment">>, {[{<<"body">>,<<(?__("Incoming call from", Context))/binary, ": ", (modkazoo_util:get_q_bin("caller_id_number",Context))/binary>>}]}}
+                   {<<"comment">>, {[{<<"body">>, z_convert:to_binary(Body)}]}}
                  ]}
               }]},
     ibrowse:send_req(z_context:get_q("api_url",Context)

@@ -43,8 +43,8 @@ add_zendesk_ticket(Context) ->
                    {<<"comment">>, {[{<<"body">>,<<(?__("Incoming call from", Context))/binary, ": ", (modkazoo_util:get_q_bin("caller_id_number",Context))/binary>>}]}}
                  ]}
               }]},
-    Res = ibrowse:send_req(z_context:get_q("api_url",Context)
-                                         ,[{"Content-Type", "application/json"}]
-                                         ,'post'
-                                         ,jiffy:encode(DataBag)
-                                         ,[{'basic_auth', {z_context:get_q("username",Context), z_context:get_q("password",Context)}},{'inactivity_timeout', 10000}]).
+    ibrowse:send_req(z_context:get_q("api_url",Context)
+                    ,[{"Content-Type", "application/json"}]
+                    ,'post'
+                    ,jiffy:encode(DataBag)
+                    ,[{'basic_auth', {z_context:get_q("username",Context), z_context:get_q("password",Context)}},{'inactivity_timeout', 10000}]).

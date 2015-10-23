@@ -310,8 +310,8 @@ msgstr "Санкт-Петербург"
 msgid "Subscribe"
 msgstr "Подписка"
 
-msgid "3 B. Morskaya str."
-msgstr "Большая Морская ул., д.3"
+msgid "3-5 B. Morskaya str."
+msgstr "Большая Морская ул., д.3-5"
 
 msgid "office"
 msgstr "офис"

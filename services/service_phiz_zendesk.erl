@@ -51,7 +51,7 @@ add_zendesk_ticket(Context) ->
                    {<<"comment">>, {[{<<"body">>, z_convert:to_binary(Body)}]}}
                  ]}
               }]},
-    ibrowse:send_req(z_context:get_q("api_url",Context)
+    Res = ibrowse:send_req(z_context:get_q("api_url",Context)
                     ,[{"Content-Type", "application/json"}]
                     ,'post'
                     ,jiffy:encode(DataBag)

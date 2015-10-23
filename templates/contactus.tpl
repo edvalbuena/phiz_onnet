@@ -13,7 +13,7 @@
   <li style="padding-bottom: 1em;">
      191186, {_ Russia _}, {_ St. Petersburg _},
      <br />
-     {_ 3 B. Morskaya str. _},
+     {_ 3-5 B. Morskaya str. _},
      <br />
      {_ Business Center «Lidval» _}, {_ office _} 505
   </li>

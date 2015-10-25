@@ -26,7 +26,7 @@
 
 <p style="text-align: left;">&nbsp;</p>
 
-<p>&nbsp;<img src="/lib/img/city_reach.jpg" width="600" alt="" /></p>
+<p>&nbsp;<img src="/lib/images/city_reach.jpg" width="600" alt="" /></p>
 
 <p>&nbsp;</p>
 
@@ -34,15 +34,15 @@
 
 <p>&nbsp;</p>
 
-<p><img src="/lib/img/mounting.jpg" width="600" alt="" /></p>
+<p><img src="/lib/images/mounting.jpg" width="600" alt="" /></p>
 
 <p>&nbsp;</p>
 
-<p><img src="/lib/img/alaric.jpg" width="600" alt="" /></p>
+<p><img src="/lib/images/alaric.jpg" width="600" alt="" /></p>
 
 <p>&nbsp;</p>
 
-<p><img src="/lib/img/cityreach1.jpg" width="600" alt="" /></p>
+<p><img src="/lib/images/cityreach1.jpg" width="600" alt="" /></p>
 
 <p>&nbsp;</p>
 
@@ -54,15 +54,15 @@
 
 <p style="text-align: center;">&nbsp;</p>
 
-<p><img src="/lib/img/thespinnaker.jpg" width="600" alt="" /></p>
+<p><img src="/lib/images/thespinnaker.jpg" width="600" alt="" /></p>
 
 <p>&nbsp;</p>
 
 <p>Дешево и сердито ... очень рекомендуем :)&nbsp;</p>
 
-<p style="text-align: left;">&nbsp;<img src="/lib/img/relax2.jpg" width="290" alt="" />
+<p style="text-align: left;">&nbsp;<img src="/lib/images/relax2.jpg" width="290" alt="" />
                              &nbsp;&nbsp;
-                                   <img src="/lib/img/coins.jpg" width="290" alt="" style="vertical-align: bottom;" /></p>
+                                   <img src="/lib/images/coins.jpg" width="290" alt="" style="vertical-align: bottom;" /></p>
 
 </td>
 </tr>

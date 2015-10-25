@@ -77,7 +77,7 @@
             <span class="title">{_ Welcome _}</span><span class="decoration"></span><span class="decoration"></span><span class="decoration"></span>
           </h2>
         </div>
-          <img src="/lib/img/about.jpg" class="img-about img-responsive" alt="About">
+          <img src="/lib/images/about.jpg" class="img-about img-responsive" alt="About">
           <p style="font-size: 1.15em; text-align: center; color: #E86110;">
               <span class="hidden-md"><br /></span> 
               {_ Whoever You Are _},

@@ -223,6 +223,9 @@ msgstr "Кем бы Вы ни были"
 msgid "Order"
 msgstr "Заказать"
 
+msgid "more blogs"
+msgstr "еще статьи"
+
 msgid "more news"
 msgstr "еще новости"
 

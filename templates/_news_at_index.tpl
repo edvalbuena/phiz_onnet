@@ -10,5 +10,5 @@
               </div>
             </div>
             {% endfor %}
-            <a href="#" class="read-more">{_ more news _}...</a>
+            <a href="/allnews" class="read-more">{_ more news _}...</a>
           </div>

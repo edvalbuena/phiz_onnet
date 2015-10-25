@@ -13,6 +13,8 @@
  {payments,["payments"],         controller_template,  [ {template, "payments.tpl"} ]},
  {aboutus,["aboutus"],         controller_template,  [ {template, "aboutus.tpl"} ]},
  {network,["network"],         controller_template,  [ {template, "network.tpl"} ]},
+ {allnews,["allnews"],         controller_template,  [ {template, "allnews.tpl"} ]},
+ {allblogs,["allblogs"],         controller_template,  [ {template, "allblogs.tpl"} ]},
  {cityreach,["cityreach"],         controller_template,  [ {template, "cityreach.tpl"} ]},
  {trademark,["trademark"],         controller_template,  [ {template, "trademark.tpl"} ]},
  {licenses,["licenses"],         controller_template,  [ {template, "licenses.tpl"} ]},
@@ -30,6 +32,10 @@
  {documents,["documents"],         controller_template,  [ {template, "documents.tpl"} ]},
  {getlbdocs, ["getlbdocs","id",id], controller_getlbdocs, [{path, id},{use_cache, false},{content_disposition, attachment},{ssl, any}]},
  {cdr_csv_download,  ["cdr", "csv", "download"],   controller_onnet_cdr_csv, []},
- {mail, ["mail"], controller_redirect, [{url, "https://mail.onnet.su"}, {is_permanent, true}]}
+ {mail, ["mail"], controller_redirect, [{url, "https://mail.onnet.su"}, {is_permanent, true}]},
+
+ {page, ["page", id],       controller_page, [ {template, {cat, "page.tpl"}} ]},
+ {page, ["page", id, slug], controller_page, [ {template, {cat, "page.tpl"}} ]}
+
 
 ].

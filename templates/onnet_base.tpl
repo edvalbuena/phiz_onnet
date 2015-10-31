@@ -25,15 +25,14 @@
     {% lib
           "css/z.modal.css"
     %}
+
     {% lib
           "css/z.growl.css"
           "css/jquery.loadmask.css"
-          "css/animate.css"
-          "css/elements.css"
-          "css/custom.css"
-          "css/onnet.css"
     %}
  
+    {% all include "_mod_style.tpl" %} 
+
     {% with ["/lib/images/spb_gostdvor.jpg","/lib/images/ldn_docklands.jpg"]|random as bgr_image %}
     <style type="text/css">
         #wrap,

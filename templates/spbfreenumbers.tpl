@@ -6,7 +6,7 @@
 <thead>
 <tr align="center">
     <th style="text-align: center;">Номер ГТС Санкт-Петербурга</th>
-    <th  style="text-align: center;">Стоимость, без учета НДС</th>
+    <th  style="text-align: center;">Стоимость, c учетом НДС</th>
     <th>Номер e.164</th>
     <th>Номер</th>
 </tr>

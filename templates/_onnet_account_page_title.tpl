@@ -6,5 +6,5 @@
     {% if m.lb.is_operators_session %} <a style="color:red; text-decoration:none;">{_ Operator _}-{{ m.session.lb_user_id }}</a>{% endif %}
   </p>
   </div>
-  <h2>{{ title }}</h2>
+  <h3>{{ title }}</h3>
 </div>

@@ -4,7 +4,7 @@
 <thead>
 <tr align="center">
     <th style="text-align: center;">Номер ГТС Москвы</th>
-    <th  style="text-align: center;">Стоимость, без учета НДС</th>
+    <th  style="text-align: center;">Стоимость, с учетом НДС</th>
     <th>Номер e.164</th>
     <th>Номер</th>
 </tr>

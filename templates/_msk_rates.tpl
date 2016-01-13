@@ -7,12 +7,12 @@
 <tr>
     <th style="text-align: center; vertical-align: middle; width: 45%;">{_ Description _}</th>
     <th  style="text-align: center; vertical-align: middle; width: 40%;">{_ Prefix _}</th>
-    <th style="text-align: center; vertical-align: middle; width: 15%;">{_ Price _} ({_ excl VAT _})</th>
+    <th style="text-align: center; vertical-align: middle; width: 15%;">{_ Price _} ({_ incl VAT _})</th>
 </tr>
 </thead>
 <tbody>
 
-{% for rate in m.lb[{rates_list tar_id="269"}] %}
+{% for rate in m.lb[{rates_list tar_id="27"}] %}
 {% if rate["prefix"] %}
 <tr>
     <td style="text-align: left; vertical-align: middle; width: 45%;">{{ rate["description"] }}</td>

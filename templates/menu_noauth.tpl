@@ -16,7 +16,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">{_ Services _} <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="/virtualoffice">{_ Virtual Office _}</a></li>
-                  <li><a href="/vpbx">{_ HOSTED PBX _}</a></li>
+                  <li><a href="/vpbx">{_ Hosted PBX _}</a></li>
                   <li><a href="/freenumbers">{_ Phone Numbers _}</a></li>
                   <li><a href="/virtualserver">{_ Virtual Server _}</a></li>
                   <li><a href="/cloudstorage">{_ Cloud Storage _}</a></li>

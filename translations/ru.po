@@ -538,6 +538,9 @@ msgstr "Шаблон Nova CRM"
 msgid "CRM Integration Ordered"
 msgstr "Заказана интеграция с системой CRM"
 
+msgid "HOSTED PBX"
+msgstr "Виртуальный офис"
+
 msgid "Hosted PBX Server"
 msgstr "Сервер Виртуальной АТС"
 
@@ -699,9 +702,6 @@ msgstr "Выберите услугу"
 
 msgid "Virtual Office"
 msgstr "Виртуальный Офис"
-
-msgid "Hosted PBX"
-msgstr "Виртуальная АТС"
 
 msgid "Virtual PBX"
 msgstr "Виртуальная АТС"

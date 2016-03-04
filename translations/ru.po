@@ -13,8 +13,8 @@ msgstr ""
 msgid ""
 msgstr ""
 
-msgid ""
-msgstr ""
+msgid "Sale!  First number free"
+msgstr "Акция - Первый номер бесплатно!"
 
 msgid "HOSTED PBX"
 msgstr "ВИРТУАЛЬНАЯ АТС"

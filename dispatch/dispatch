@@ -1,6 +1,6 @@
 [
 
- {home,      [],	controller_template,  	[ {template, "index.tpl"} ]},
+ {home,      [],	controller_template,  	[ {template, "index.tpl"},{ssl, true} ]},
 
  {virtualoffice,["virtualoffice"],         controller_template,  [ {template, "virtualoffice.tpl"} ]},
  {vpbx,["vpbx"],         controller_template,  [ {template, "hostedpbx.tpl"} ]},

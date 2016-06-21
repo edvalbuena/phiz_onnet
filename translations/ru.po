@@ -16,7 +16,7 @@ msgstr ""
 msgid "Sale!  First number free"
 msgstr "Акция - Первый номер бесплатно!"
 
-msgid "HOSTED PBX"
+msgid "VIRTUAL PBX"
 msgstr "ВИРТУАЛЬНАЯ АТС"
 
 msgid "News"

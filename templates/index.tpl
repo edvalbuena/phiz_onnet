@@ -22,8 +22,8 @@
                 <h1 class="animated slideInDown">{_ Business Telephony _}</h1>
                 <div class="list">
                   <ul>
-                    <li class="animated slideInLeft first delay" style="margin-bottom: 1em; color: yellow; font-family: cursive;"><span><i class="fa fa fa-exclamation"></i> 
-                              <a class="undecorate-link" href="/number-one">{_ Sale!  First number free _}.</a></span></li>
+             <!--       <li class="animated slideInLeft first delay" style="margin-bottom: 1em; color: yellow; font-family: cursive;"><span><i class="fa fa fa-exclamation"></i> 
+                              <a class="undecorate-link" href="/number-one">{_ Sale!  First number free _}.</a></span></li>  -->
                     <li class="animated slideInLeft first delay"><span><i class="fa fa fa-phone"></i> 
                               <a class="undecorate-link" href="/virtualoffice">{_ Virtual Office _}.</a></span></li>
                     <li class="animated slideInLeft second delay"><span><i class="fa fa-cogs"></i>
@@ -106,7 +106,7 @@
           </div>
           <div style="font-size: 1.3em; text-align: center; color: #E86110;">
               <br />  
-              {_ 12 years of experience in the telecommunications market allows us to state that _},
+              {_ 13 years of experience in the telecommunications market allows us to state that _},
               <br />  
               {_ IN TELECOMS WE CAN DO ANYTHING _}!
               <br />  

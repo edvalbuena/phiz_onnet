@@ -1,7 +1,7 @@
 {% extends "services.tpl" %}
 
 
-{% block service_name %}{_ HOSTED PBX _}{% endblock %}
+{% block service_name %}{_ VIRTUAL PBX _}{% endblock %}
 
 
 {% block service_description %}

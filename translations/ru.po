@@ -16,7 +16,7 @@ msgstr ""
 msgid "Sale!  First number free"
 msgstr "Акция - Первый номер бесплатно!"
 
-msgid "HOSTED PBX"
+msgid "VIRTUAL PBX"
 msgstr "ВИРТУАЛЬНАЯ АТС"
 
 msgid "News"
@@ -196,8 +196,8 @@ msgstr "Наши ЦЕНЫ действительно ПРИВЛЕКАТЕЛЬН�
 msgid "IN TELECOMS WE CAN DO ANYTHING"
 msgstr "В ОБЛАСТИ СВЯЗИ МЫ МОЖЕМ ВСЁ"
 
-msgid "12 years of experience in the telecommunications market allows us to state that"
-msgstr "12-летний опыт работы на рынке телекоммуникаций позволяет нам утверждать"
+msgid "13 years of experience in the telecommunications market allows us to state that"
+msgstr "13-летний опыт работы на рынке телекоммуникаций позволяет нам утверждать"
 
 msgid "and let us know what you are dreaming of"
 msgstr "и расскажите нам о чём Вы мечтаете"

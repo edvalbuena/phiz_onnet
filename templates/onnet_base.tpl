@@ -87,6 +87,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
+    {% include "c2call.tpl" %}
   </head>
   <body>
     {% include "topmenu.tpl" %}
@@ -97,7 +98,6 @@
     {% include "google_anatytics.tpl" %}
     {% include "yandex_metrika.tpl" %}
     {% include "rambler_counter.tpl" %}
-    {% include "c2call.tpl" %}
     {% script %}
   </body>
 </html>
